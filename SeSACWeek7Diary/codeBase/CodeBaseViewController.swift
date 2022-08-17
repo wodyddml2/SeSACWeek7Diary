@@ -158,14 +158,12 @@ class CodeBaseViewController: UIViewController {
         remitButton.snp.makeConstraints { make in
             make.trailing.equalTo(settingButton.snp.leading).offset(-10)
             make.centerY.equalTo(settingButton)
-            make.width.equalTo(settingButton.snp.width).multipliedBy(1)
-            make.height.equalTo(remitButton.snp.width).multipliedBy(1)
+            make.width.height.equalTo(settingButton.snp.width).multipliedBy(1)
         }
         giftButton.snp.makeConstraints { make in
             make.trailing.equalTo(remitButton.snp.leading).offset(-10)
             make.centerY.equalTo(remitButton)
-            make.width.equalTo(remitButton.snp.width).multipliedBy(1)
-            make.height.equalTo(giftButton.snp.width).multipliedBy(1)
+            make.width.height.equalTo(remitButton.snp.width).multipliedBy(1)
         }
     }
     
@@ -183,10 +181,7 @@ class CodeBaseViewController: UIViewController {
         }
         
         profileButton.snp.makeConstraints { make in
-            make.top.equalTo(profileImageView)
-            make.bottom.equalTo(profileImageView)
-            make.leading.equalTo(profileImageView)
-            make.trailing.equalTo(profileImageView)
+            make.top.bottom.leading.trailing.equalTo(profileImageView)
         }
         
         profileNameLabel.snp.makeConstraints { make in
@@ -229,9 +224,7 @@ class CodeBaseViewController: UIViewController {
         }
         profileEditButton.snp.makeConstraints { make in
             make.top.equalTo(profileEditImageView)
-            make.leading.equalTo(profileEditLabel)
-            make.trailing.equalTo(profileEditLabel)
-            make.bottom.equalTo(profileEditLabel)
+            make.leading.trailing.bottom.equalTo(profileEditLabel)
         }
         //
         chattingImageView.snp.makeConstraints { make in
@@ -247,9 +240,7 @@ class CodeBaseViewController: UIViewController {
         }
         chattingButton.snp.makeConstraints { make in
             make.top.equalTo(chattingImageView)
-            make.leading.equalTo(chattingLabel)
-            make.trailing.equalTo(chattingLabel)
-            make.bottom.equalTo(chattingLabel)
+            make.leading.trailing.bottom.equalTo(chattingLabel)
         }
         
         //
@@ -267,9 +258,7 @@ class CodeBaseViewController: UIViewController {
         }
         kakaoStoryButton.snp.makeConstraints { make in
             make.top.equalTo(kakaoStoryImageView)
-            make.leading.equalTo(kakaoStoryLabel)
-            make.trailing.equalTo(kakaoStoryLabel)
-            make.bottom.equalTo(kakaoStoryLabel)
+            make.leading.trailing.bottom.equalTo(kakaoStoryLabel)
         }
         
     }
@@ -278,7 +267,7 @@ class CodeBaseViewController: UIViewController {
 
 extension UILabel {
     func boldTextStyle(_ title: String, _ size: CGFloat) {
-        self.text = "Tom"
+        self.text = title
         self.textColor = .white
         self.font = .boldSystemFont(ofSize: size)
         self.textAlignment = .center
