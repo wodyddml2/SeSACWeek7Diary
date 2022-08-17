@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="msh-xC-3r4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xRV-bp-UtF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,8 +11,8 @@
         <!--Walk Through View Controller-->
         <scene sceneID="vjK-eu-zes">
             <objects>
-                <pageViewController storyboardIdentifier="WalkThroughViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xRV-bp-UtF" customClass="WalkThroughViewController" customModule="SeSACWeek7Diary" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74U-eZ-dB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="WalkThroughViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xRV-bp-UtF" customClass="WalkThroughViewController" customModule="SeSACWeek7Diary" customModuleProvider="target" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="-729" y="60"/>
         </scene>
@@ -41,12 +41,21 @@
                                     <constraint firstAttribute="height" constant="5" id="Uh2-Bi-G07"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jqY-EN-oXb">
+                                <rect key="frame" x="304" y="44" width="90" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="OfF-Dm-cPK"/>
+                                    <constraint firstAttribute="height" constant="87" id="WZf-i8-KfM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jqY-EN-oXb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="61o-5Q-R02"/>
                             <constraint firstItem="cD3-es-nYE" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="A0T-MG-jaO"/>
                             <constraint firstItem="Gnz-YJ-UYd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="Ed6-Oa-xoa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jqY-EN-oXb" secondAttribute="trailing" constant="20" id="IfS-hu-DYs"/>
                             <constraint firstItem="Gnz-YJ-UYd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="TX4-WF-pBS"/>
                             <constraint firstItem="cD3-es-nYE" firstAttribute="top" secondItem="Gnz-YJ-UYd" secondAttribute="bottom" constant="8" id="aGR-PC-SWc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Gnz-YJ-UYd" secondAttribute="trailing" constant="30" id="ahD-1r-Pge"/>
@@ -54,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="blackView" destination="cD3-es-nYE" id="GW3-uM-xTs"/>
+                        <outlet property="tutorialImageView" destination="jqY-EN-oXb" id="Qsg-jK-LLl"/>
                         <outlet property="tutorialLabel" destination="Gnz-YJ-UYd" id="4r9-fz-eZj"/>
                     </connections>
                 </viewController>
@@ -90,38 +100,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dT-aU-WtY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1435" y="63"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3qU-5W-72C">
-            <objects>
-                <viewController id="msh-xC-3r4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kbr-N2-iyb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnd-tZ-OqU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Li8-0k-Cf9"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="xRV-bp-UtF" kind="embed" id="JbL-UB-TI5"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="UoA-ln-dcK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fnd-tZ-OqU" firstAttribute="leading" secondItem="UoA-ln-dcK" secondAttribute="leading" id="cMu-hC-scR"/>
-                            <constraint firstItem="fnd-tZ-OqU" firstAttribute="top" secondItem="UoA-ln-dcK" secondAttribute="top" id="isZ-Kr-PwB"/>
-                            <constraint firstItem="UoA-ln-dcK" firstAttribute="trailing" secondItem="fnd-tZ-OqU" secondAttribute="trailing" id="wRq-X5-u62"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQa-8k-WAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1591" y="60"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        let vc = CodeSnap2ViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
         
 //        showSesacAlert(title: "테스트", message: "테스트 중", buttonTitle: "변경") { _ in
 //            self.view.backgroundColor = .lightGray}
