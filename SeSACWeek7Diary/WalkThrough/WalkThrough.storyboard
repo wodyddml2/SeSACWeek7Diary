@@ -11,8 +11,8 @@
         <!--Walk Through View Controller-->
         <scene sceneID="vjK-eu-zes">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="74U-eZ-dB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <pageViewController storyboardIdentifier="WalkThroughViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xRV-bp-UtF" customClass="WalkThroughViewController" customModule="SeSACWeek7Diary" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74U-eZ-dB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-729" y="60"/>
         </scene>
