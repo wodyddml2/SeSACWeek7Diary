@@ -135,10 +135,7 @@ class CodeBaseViewController: UIViewController {
         }
         
         backgroundImageView.snp.makeConstraints { make in
-            make.leading.equalTo(0)
-            make.trailing.equalTo(0)
-            make.top.equalTo(0)
-            make.bottom.equalTo(0)
+            make.leading.trailing.top.bottom.equalTo(0)
         }
         
         backButton.snp.makeConstraints { make in

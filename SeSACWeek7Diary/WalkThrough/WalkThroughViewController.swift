@@ -57,6 +57,7 @@ extension WalkThroughViewController: UIPageViewControllerDelegate ,UIPageViewCon
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        // 페이지의 갯수가 유동적으로 쌓일 경우 대응
         guard let first = viewControllers?.first, let index = pageViewControllerList.firstIndex(of: first) else { return 0}
         print(index)
         return index

@@ -11,6 +11,8 @@
 		6315453E28AC81B200BFA02B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6315453D28AC81B200BFA02B /* SnapKit */; };
 		6315454028AC822C00BFA02B /* CodeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315453F28AC822C00BFA02B /* CodeSnapViewController.swift */; };
 		6315454228AC8C1700BFA02B /* CodeSnap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315454128AC8C1700BFA02B /* CodeSnap2ViewController.swift */; };
+		6359542228ADDF0D003A68E4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359542128ADDF0D003A68E4 /* UIViewController+Extension.swift */; };
+		6359542428ADE5FF003A68E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359542328ADE5FF003A68E4 /* ProfileViewController.swift */; };
 		63D30DE828AB1FC400CFD1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30DE728AB1FC400CFD1D0 /* AppDelegate.swift */; };
 		63D30DEA28AB1FC400CFD1D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30DE928AB1FC400CFD1D0 /* SceneDelegate.swift */; };
 		63D30DEC28AB1FC400CFD1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30DEB28AB1FC400CFD1D0 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		6315453A28AC71AD00BFA02B /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		6315453F28AC822C00BFA02B /* CodeSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnapViewController.swift; sourceTree = "<group>"; };
 		6315454128AC8C1700BFA02B /* CodeSnap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnap2ViewController.swift; sourceTree = "<group>"; };
+		6359542128ADDF0D003A68E4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		6359542328ADE5FF003A68E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63D30DE428AB1FC400CFD1D0 /* SeSACWeek7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D30DE728AB1FC400CFD1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D30DE928AB1FC400CFD1D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,14 @@
 			path = codeBase;
 			sourceTree = "<group>";
 		};
+		6359541E28ADDEEA003A68E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6359542128ADDF0D003A68E4 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		63D30DDB28AB1FC400CFD1D0 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		63D30DE628AB1FC400CFD1D0 /* SeSACWeek7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				6359541E28ADDEEA003A68E4 /* Extension */,
 				6315453728AC718F00BFA02B /* codeBase */,
 				63D30E1928AB3A3700CFD1D0 /* WalkThrough */,
 				63D30DE728AB1FC400CFD1D0 /* AppDelegate.swift */,
@@ -133,6 +146,7 @@
 				63D30DF028AB1FC400CFD1D0 /* Assets.xcassets */,
 				63D30DF228AB1FC400CFD1D0 /* LaunchScreen.storyboard */,
 				63D30DF528AB1FC400CFD1D0 /* Info.plist */,
+				6359542328ADE5FF003A68E4 /* ProfileViewController.swift */,
 			);
 			path = SeSACWeek7Diary;
 			sourceTree = "<group>";
@@ -267,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6359542228ADDF0D003A68E4 /* UIViewController+Extension.swift in Sources */,
 				63D30DEC28AB1FC400CFD1D0 /* ViewController.swift in Sources */,
 				63D30DE828AB1FC400CFD1D0 /* AppDelegate.swift in Sources */,
 				6315454228AC8C1700BFA02B /* CodeSnap2ViewController.swift in Sources */,
@@ -276,6 +291,7 @@
 				6315454028AC822C00BFA02B /* CodeSnapViewController.swift in Sources */,
 				63D30E2928AB417500CFD1D0 /* ThirdViewController.swift in Sources */,
 				6315453B28AC71AD00BFA02B /* CodeViewController.swift in Sources */,
+				6359542428ADE5FF003A68E4 /* ProfileViewController.swift in Sources */,
 				63D30E2B28AB418800CFD1D0 /* WalkThroughViewController.swift in Sources */,
 				63D30E1D28AB3A8E00CFD1D0 /* FirstViewController.swift in Sources */,
 			);
